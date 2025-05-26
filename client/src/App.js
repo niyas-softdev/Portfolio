@@ -237,7 +237,7 @@ function App() {
               </h2>
               <div className=" mt-5">
                 <a
-                  href="../SARAN KUMAR.pdf"
+                  href="../niyas.resume.pdf"
                   className="btn41-43 btn-41 text-decoration-none rounded"
                 >
                   Resume
@@ -292,118 +292,99 @@ function App() {
             </p>
           </span>
         </Row>
-        {/* Projects */}
-        <Row data-aos="fade-up">
-          <Col xs={12} md={6}>
-            <div className="fontwhite px-3">
-              <h1 className="headings">Projects</h1>
-              <p className="p-3 project-font">
-                <strong>
-                  Below are some of my recent projects where I've honed my
-                  skills in modern web development technologies, particularly
-                  focusing on the MERN stack (MongoDB, Express.js, React.js,
-                  Node.js). Through these projects, I've gained hands-on
-                  experience in building scalable and efficient web
-                  applications.
-                </strong>
-              </p>
-            </div>
-          </Col>
-        </Row>
-        {/* Card_Caontainer */}
-        <Row data-aos="fade-up">
-          <Col xs={12} md={4} className=" pt-3 d-flex justify-content-center ">
-            <a
-              href="https://github.com/niyas-softdev/HealthCare-Bot.git"
-              className=" text-decoration-none"
-            >
-              {" "}
-              <Card
-                style={{ width: "18rem" }}
-                className=" card-container hover-effect2"
-              >
-                <div className=" d-flex justify-content-end p-2 fs-4">
-                  <BiLinkExternal className=" text-white" />
-                </div>{" "}
-                <Card.Body>
-                  <Card.Title className="card-title">HelthCare-Bot</Card.Title>
-                  <Card.Text className="fontwhite text_content">
-                    HealthCare-Bot is a React.js project designed to assist
-                    users with health-related inquiries and provide relevant
-                    information or guidance. It leverages chatbot technology to
-                    interact with users in a conversational manner, To ask questions from Bot.
-                  </Card.Text>
-                </Card.Body>
-                <div className="skills d-flex justify-content-evenly pb-2">
-                  <small className="0">React.js</small>
-                  <small className="0">Bootstrap</small>
-                  <small className="1">Responsive</small>
-                </div>
-              </Card>
-            </a>
-          </Col>
-          <Col xs={12} md={4} className=" pt-3 d-flex justify-content-center ">
-            <a
-              href="https://github.com/niyas-softdev/Edu-Learn-Hub.git"
-              className=" text-decoration-none"
-            >
-              <Card
-                style={{ width: "18rem" }}
-                className=" card-container hover-effect2 "
-              >
-                <div className=" d-flex justify-content-end p-2 fs-4">
-                  <BiLinkExternal className=" text-white" />
-                </div>{" "}
-                <Card.Body>
-                  <Card.Title className="card-title">EduLearn-Hub</Card.Title>
-                  <Card.Text className="fontwhite text_content">
-                    EduLearn-Hub is a HTML/CSS project that serves as an
-                    educational platform, offering a variety of learning
-                    resources and materials. It provides a user-friendly
-                    interface designed to facilitate easy navigation and access
-                    to educational content.
-                  </Card.Text>
-                </Card.Body>
-                <div className="skills d-flex justify-content-evenly pb-2">
-                  <small className="0">HTML</small>
-                  <small className="1">CSS</small>
-                  <small className="2">Intractive</small>
-                </div>
-              </Card>
-            </a>
-          </Col>
-          <Col xs={12} md={4} className=" pt-3 d-flex justify-content-center ">
-            <a
-              href="https://github.com/niyas-softdev/Crud-operations-with-authentification.git"
-              className=" text-decoration-none"
-            >
-              {" "}
-              <Card
-                style={{ width: "18rem" }}
-                className=" card-container hover-effect2"
-              >
-                <div className=" d-flex justify-content-end p-2 fs-4">
-                  <BiLinkExternal className=" text-white" />
-                </div>{" "}
-                <Card.Body>
-                  <Card.Title className="card-title">Crud-Operation</Card.Title>
-                  <Card.Text className="fontwhite text_content">
-                    It allows users to sign up for accounts, log in securely,
-                    and manage their data securely. With robust authentication
-                    mechanisms in place, only authorized users can interact with
-                    the application, ensuring data integrity and user privacy.
-                  </Card.Text>
-                </Card.Body>
-                <div className="skills d-flex justify-content-evenly pb-2">
-                  <small className="0">React.js</small>
-                  <small className="1">Node.js</small>
-                  <small className="2">Express.js</small>
-                  <small className="3">Mongo DB</small>
-                </div>
-              </Card>
-            </a>
-          </Col>
-        </Row>
+        {/* Projects Section */}
+<Row id="projects" data-aos="fade-up" className="scroll-mt-20">
+  <Col xs={12}>
+    <div className="fontwhite px-3">
+      <h1 className="headings text-center">Projects</h1>
+      <p className="p-3 project-font text-center">
+        <strong>
+          A curated list of full-stack and frontend projects built using modern tech stacks like MERN, Firebase, and more. These projects demonstrate my ability to build scalable and production-ready apps.
+        </strong>
+      </p>
+    </div>
+  </Col>
+</Row>
+
+{/* Project Cards Grid */}
+<Row data-aos="fade-up" className="gy-4">
+  {/* Each <Col> below is one project card */}
+  {[
+    {
+      title: "Gym Fitness Website",
+      image: "/gym.png",
+      text: "A full-stack MERN fitness platform with Google Login, workout tracking, and Razorpay integration. Built for performance and production deployment.",
+      tags: ["React (Vite)", "MongoDB", "Razorpay", "Node.js"],
+    },
+    {
+      title: "Destined Estates",
+      image: "/destinedestate.png",
+      text: "A freelance real estate website built with React (Vite) and Tailwind CSS. Features a modern, creative design and responsive layout. Deployed on Google Cloud.",
+      tags: ["React (Vite)", "Tailwind CSS", "Google Cloud", "Static Site"],
+    },
+    {
+      title: "Beauty Service Appointment",
+      image: "/beautyservice.png",
+      text: "A full-stack app for booking salon appointments. Built with React (Vite), Tailwind CSS, Node.js, MongoDB. Includes Razorpay and login functionality.",
+      tags: ["React (Vite)", "Tailwind CSS", "Node.js", "Express", "MongoDB", "Razorpay"],
+    },
+    {
+      title: "PetShop Admin Dashboard",
+      image: "/petshop.png",
+      text: "A CRUD dashboard to manage pet inventory. Admins can add, edit, delete, and view pet details. Built using MERN and Tailwind.",
+      tags: ["React (Vite)", "Tailwind CSS", "MongoDB", "Node.js", "CRUD", "Dashboard"],
+    },
+    {
+      title: "ALC Jewellery Sales",
+      image: "/alc.png",
+      text: "A jewellery sales dashboard built with React, MongoDB, and Node.js. Includes admin CRUD operations for managing jewellery products.",
+      tags: ["React (Vite)", "Tailwind CSS", "MongoDB", "Node.js", "CRUD", "Jewellery"],
+    },
+    {
+      title: "TO-DO List App",
+      image: "/todo.png",
+      text: "A Firebase-authenticated React app to manage tasks. Users can sign in, add, complete, or delete tasks. Responsive and mobile-ready.",
+      tags: ["React.js", "Bootstrap", "Firebase Auth", "To-Do", "Login"],
+    },
+  ].map((project, index) => (
+    <Col
+  xs={12}
+  md={4}
+  className="d-flex justify-content-center px-3 mb-4"
+  key={index}
+>
+  <Card
+    style={{ width: "100%", maxWidth: "20rem" }}
+    className="project-card bg-dark text-white shadow-lg h-100"
+  >
+    <Card.Img
+      variant="top"
+      src={project.image}
+      alt={project.title}
+      style={{ objectFit: "cover", height: "180px" }}
+    />
+    <Card.Body className="d-flex flex-column justify-content-between">
+      <div>
+        <Card.Title className="fw-bold fs-5 mb-2">
+          {project.title}
+        </Card.Title>
+        <Card.Text className="mb-3">{project.text}</Card.Text>
+      </div>
+      <div className="tags d-flex flex-wrap gap-2 mt-auto pt-2">
+        {project.tags.map((tag, i) => (
+          <span key={i} className="badge bg-warning text-dark">
+            {tag}
+          </span>
+        ))}
+      </div>
+    </Card.Body>
+  </Card>
+</Col>
+
+  ))}
+</Row>
+
+
         {/* About me */}
         <Row className=" mt-3" data-aos="fade-up">
           <Col xs={12} md={6} className=" my-5">
